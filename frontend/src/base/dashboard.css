@@ -1,0 +1,59 @@
+.dashboard {
+  display: flex;
+}
+
+.brand span:last-child {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.sidebar {
+  flex: 20%;
+  padding: 10px;
+  border: 1px solid red;
+  height: 100vh;
+  text-align: center;
+  background-color: #FDEBD0;
+}
+
+.user-position {
+    color: rgba(242, 150, 19, 1);
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.user-profile > img {
+  object-fit: cover;
+  margin-top: 4em;
+}
+
+.user-info {
+    margin-top: 20px;
+}
+.main {
+  flex: 80%;
+}
+
+
+.links {
+    padding: 60px;
+}
+
+
+button.MuiButtonBase-root {
+    margin-top: 25px;
+    border: none;
+    color: black;
+}
+
+button.MuiButtonBase-root:nth-child(1) {
+    background-color: rgba(242, 150, 19, 1);
+}
+
+button.MuiButtonBase-root:nth-child(7) {
+    margin-top: 100px;
+}
+
+button.MuiButtonBase-root:hover {
+    border: none;
+}

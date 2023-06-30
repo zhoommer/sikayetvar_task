@@ -1,0 +1,79 @@
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(242, 236, 6);
+  background: linear-gradient(
+    306deg,
+    rgba(242, 236, 6, 1) 0%,
+    rgba(242, 150, 19, 1) 100%
+  );
+  height: 100vh;
+}
+
+.form {
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  padding: 7em;
+}
+
+.form div {
+    margin: 15px;
+}
+
+.vl {
+    border: 4px solid rgba(242, 150, 19, 1);
+    background-color: rgba(242, 150, 19, 1);
+}
+
+.header h3 {
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.login-header h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+label {
+  color: #566573;
+  font-weight: 400;
+}
+
+input::placeholder {
+    color: #99A3A4;
+    font-size: 15px;
+}
+
+input {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(242, 150, 19, 1);
+    color: #fff;
+}
+
+
+.forgotPassword {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.forgotPassword span a {
+    color: rgba(242, 150, 19, 1);
+    text-decoration: underline;
+    font-weight: 600;
+}
