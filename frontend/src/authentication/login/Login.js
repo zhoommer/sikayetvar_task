@@ -2,6 +2,9 @@ import React from "react";
 import './login.css';
 
 const Login = () => {
+    const goHome = () => {
+        window.location.href = "/home";
+    }
     return (
         <div className="loginPage">
 
@@ -32,7 +35,7 @@ const Login = () => {
                 </div>
 
                 <div className="loginButton">
-                    <button className="rounded">SIGN IN</button>
+                    <button className="rounded" onClick={goHome}>SIGN IN</button>
                 </div>
 
                 <div className="forgotPassword">
