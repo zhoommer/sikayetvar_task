@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import user from "../assets/images/user.jpg";
 import "./dashboard.css";
 // import { FaHome, FaBookmark, FaGraduationCap, FaMoneyCheckAlt, FaClipboardList, FaScrewdriver } from "react-icons/fa";
@@ -14,10 +14,24 @@ import {
   MdOutlineDoorbell
 } from "react-icons/md";
 import { Button } from "@mui/material";
+import { Routes, Route } from 'react-router-dom';
 
 import Home from "../components/home/Home";
+import Students from '../components/students/Students';
 
 const Dashboard = () => {
+
+  useEffect = () => {
+    const path = window.location.pathname.split("/");
+  }
+
+  const students = () => {
+    window.location.href = "/students";
+  }
+
+  const home = () => {
+    window.location.href = "/home";
+  }
   return (
     <div className="dashboard">
       <div className="sidebar">
@@ -30,8 +44,8 @@ const Dashboard = () => {
           <img
             src={user}
             alt="user"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             className="rounded-circle"
           />
         </div>
@@ -43,13 +57,13 @@ const Dashboard = () => {
         <div className="user-position">Admin</div>
 
         <div className="links">
-          <Button variant="outlined" startIcon={<MdOutlineHome />}>
+          <Button variant="outlined" startIcon={<MdOutlineHome />} onClick={home} id="home">
             Home
           </Button>
           <Button variant="outlined" startIcon={<MdBookmarkBorder />}>
             Course
           </Button>
-          <Button variant="outlined" startIcon={<MdOutlineSchool />}>
+          <Button variant="outlined" startIcon={<MdOutlineSchool />} onClick={students}>
             Students
           </Button>
           <Button variant="outlined" startIcon={<MdAttachMoney />}>
@@ -79,7 +93,10 @@ const Dashboard = () => {
         </div>
 
         <div className="main-content">
-          <Home /> 
+          <Routes>
+            <Route path="/home" element={<Home />}/>
+            <Route path="/students" element={<Students />}/>
+          </Routes>
         </div>
       </div>
     </div>

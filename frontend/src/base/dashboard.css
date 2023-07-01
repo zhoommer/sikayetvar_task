@@ -11,7 +11,7 @@
   width: 270px;
   padding: 10px;
   border: 1px solid red;
-  height: 100vh;
+  height: max-content;
   text-align: center;
   background-color: #f8d442;
 }
@@ -24,7 +24,7 @@
 
 .user-profile > img {
   object-fit: cover;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 .user-info {
@@ -125,4 +125,9 @@ button.MuiButtonBase-root:hover {
     rgba(242, 236, 6, 1) 0%,
     rgba(242, 150, 19, 1) 100%
   );
+}
+
+
+.active {
+  background-color: rgba(242, 150, 19, 1);
 }
