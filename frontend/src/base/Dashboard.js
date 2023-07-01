@@ -10,8 +10,12 @@ import {
   MdOutlineReportGmailerrorred,
   MdOutlineSettingsSuggest,
   MdLogout,
+  MdNavigateBefore,
+  MdOutlineDoorbell
 } from "react-icons/md";
 import { Button } from "@mui/material";
+
+import Home from "../components/home/Home";
 
 const Dashboard = () => {
   return (
@@ -64,9 +68,19 @@ const Dashboard = () => {
       </div>
 
       <div className="main">
-        <div className="main-header"></div>
+        <div className="main-header">
+          <div>
+            <MdNavigateBefore className="main-header-icon"/>
+          </div>
 
-        <div className="main-content"></div>
+          <div>
+            <MdOutlineDoorbell className="main-header-icon"/>
+          </div>
+        </div>
+
+        <div className="main-content">
+          <Home /> 
+        </div>
       </div>
     </div>
   );

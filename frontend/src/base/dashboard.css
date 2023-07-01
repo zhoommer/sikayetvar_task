@@ -8,18 +8,18 @@
 }
 
 .sidebar {
-  flex: 20%;
+  width: 270px;
   padding: 10px;
   border: 1px solid red;
   height: 100vh;
   text-align: center;
-  background-color: #FDEBD0;
+  background-color: #f8d442;
 }
 
 .user-position {
-    color: rgba(242, 150, 19, 1);
-    font-weight: 600;
-    margin-top: 10px;
+  color: rgba(242, 150, 19, 1);
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 .user-profile > img {
@@ -28,32 +28,101 @@
 }
 
 .user-info {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .main {
   flex: 80%;
 }
 
-
 .links {
-    padding: 60px;
+  padding: 60px;
 }
 
-
 button.MuiButtonBase-root {
-    margin-top: 25px;
-    border: none;
-    color: black;
+  margin-top: 25px;
+  border: none;
+  color: black;
 }
 
 button.MuiButtonBase-root:nth-child(1) {
-    background-color: rgba(242, 150, 19, 1);
+  background-color: rgba(242, 150, 19, 1);
 }
 
 button.MuiButtonBase-root:nth-child(7) {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 button.MuiButtonBase-root:hover {
-    border: none;
+  border: none;
+}
+
+.main {
+  width: 1170px;
+  height: 60px;
+}
+
+.main-header {
+  display: flex;
+}
+
+.main-header div:first-child {
+  flex: 50%;
+  position: relative;
+  left: 17.44px;
+  cursor: pointer;
+}
+
+.main-header div:last-child {
+  flex: 50%;
+  display: flex;
+  justify-content: end;
+  margin-right: 55px;
+  cursor: pointer;
+}
+
+.main-header-icon {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 75%;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box {
+  padding: 15px;
+  width: 255px;
+  height: 157px;
+  border-radius: 8px;
+}
+
+.boxes .box:nth-child(1) {
+  background: #F0F9FF;
+}
+
+
+.boxes .box:nth-child(2) {
+  background: #FEF6FB;
+}
+
+.boxes .box:nth-child(3) {
+  background: #FEFBEC;
+}
+
+.boxes .box:nth-child(4) {
+  background: rgb(242, 236, 6);
+  background: linear-gradient(
+    306deg,
+    rgba(242, 236, 6, 1) 0%,
+    rgba(242, 150, 19, 1) 100%
+  );
 }
