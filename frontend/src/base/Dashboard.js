@@ -14,7 +14,7 @@ import {
   MdOutlineDoorbell
 } from "react-icons/md";
 import { Button } from "@mui/material";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 import Home from "../components/home/Home";
 import Students from '../components/students/Students';
@@ -57,14 +57,14 @@ const Dashboard = () => {
         <div className="user-position">Admin</div>
 
         <div className="links">
-          <Button variant="outlined" startIcon={<MdOutlineHome />} onClick={home} id="home">
-            Home
+          <Button variant="outlined" startIcon={<MdOutlineHome />}>
+            <Link to={'/home'} className="text-dark text-decoration-none fw-bold">Home</Link>
           </Button>
           <Button variant="outlined" startIcon={<MdBookmarkBorder />}>
             Course
           </Button>
-          <Button variant="outlined" startIcon={<MdOutlineSchool />} onClick={students}>
-            Students
+          <Button variant="outlined" startIcon={<MdOutlineSchool />}>
+            <Link to={'/students'} className="text-dark text-decoration-none fw-bold">Students</Link>
           </Button>
           <Button variant="outlined" startIcon={<MdAttachMoney />}>
             Payment
