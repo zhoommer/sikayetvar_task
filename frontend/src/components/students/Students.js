@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Table } from 'reactstrap';
-import './student.css';
+import { Table } from "reactstrap";
+import "./student.css";
 const Students = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    getAllUsers();
+    fetch("https://dummyjson.com/users")
+      .then((res) => {
+        res.json();
+      })
+      .then((data) => {
+        setUsers(data);
+      });
   }, []);
 
-  const getAllUsers = () => {
-    axios({
-      method: "GET",
-      url: "https://dummyjson.com/users",
-    }).then((res) => {
-      setUsers(res);
-    });
-  };
   return (
     <div>
       <Table>
@@ -32,14 +30,22 @@ const Students = () => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user) => (
             <tr>
-              <th scope="row">1</th>
-              <td>{user.firstName}</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>john@gmail.com</td>
+              <td>73077477744</td>
+              <td>karthi.lorem.com</td>
+              <td>Deckow</td>
             </tr>
-          ))}
+            <tr>
+              <td>2</td>
+              <td>John Doe</td>
+              <td>john@gmail.com</td>
+              <td>73077477744</td>
+              <td>karthi.lorem.com</td>
+              <td>Deckow</td>
+            </tr>
         </tbody>
       </Table>
     </div>

@@ -5,3 +5,16 @@ th {
    font-weight: 600; 
    color: #ACACAC;
 }
+
+
+.item {
+   border: 1px solid red;
+}
+
+
+td {
+   height: 85px;
+   line-height: 85px;
+   font-size: 14px;
+   font-weight: 400;
+}

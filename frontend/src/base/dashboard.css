@@ -10,7 +10,6 @@
 .sidebar {
   width: 270px;
   padding: 10px;
-  border: 1px solid red;
   height: max-content;
   text-align: center;
   background-color: #f8d442;
@@ -42,6 +41,8 @@ button.MuiButtonBase-root {
   margin-top: 25px;
   border: none;
   color: black;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 button.MuiButtonBase-root:nth-child(1) {
