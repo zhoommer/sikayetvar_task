@@ -6,14 +6,22 @@ const Students = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("https://dummyjson.com/users")
-      .then((res) => {
-        res.json();
-      })
-      .then((data) => {
-        setUsers(data);
-      });
+    getAllUsers(); 
   }, []);
+
+  const getAllUsers = () => {
+    axios({
+      method: "GET",
+      url: "https://dummyjson.com/users"
+    })
+    .then((res) => {
+      setUsers(res)
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+  }
+  console.log(users);
 
   return (
     <div>
