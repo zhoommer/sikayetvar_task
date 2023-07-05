@@ -18,3 +18,10 @@ td {
    font-size: 14px;
    font-weight: 400;
 }
+
+#root .MuiIconButton-root {
+   background-color: transparent;
+   color: #FEAF00;
+   position: relative;
+   bottom: 15px;
+}
