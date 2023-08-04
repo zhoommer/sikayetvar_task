@@ -46,7 +46,7 @@ button.MuiButtonBase-root {
 }
 
 button.MuiButtonBase-root:nth-child(1) {
-  background-color: rgba(242, 150, 19, 1);
+  /* background-color: rgba(242, 150, 19, 1); */
 }
 
 button.MuiButtonBase-root:nth-child(7) {
@@ -130,5 +130,5 @@ button.MuiButtonBase-root:hover {
 
 
 .active {
-  background-color: rgba(242, 150, 19, 1);
+  background-color: rgba(242, 150, 19, 1) !important;
 }

@@ -23,6 +23,8 @@ const Dashboard = () => {
 
   useEffect = () => {
     const path = window.location.pathname.split("/");
+    if (path[1] === "students") {
+    }
   }
 
   const students = () => {
@@ -57,13 +59,13 @@ const Dashboard = () => {
         <div className="user-position">Admin</div>
 
         <div className="links">
-          <Button variant="outlined" startIcon={<MdOutlineHome />}>
+          <Button variant="outlined" startIcon={<MdOutlineHome />} id="home" className="active">
             <Link to={'/home'} className="text-dark text-decoration-none fw-bold">Home</Link>
           </Button>
           <Button variant="outlined" startIcon={<MdBookmarkBorder />}>
             Course
           </Button>
-          <Button variant="outlined" startIcon={<MdOutlineSchool />}>
+          <Button variant="outlined" startIcon={<MdOutlineSchool />} id="students" className="student">
             <Link to={'/students'} className="text-dark text-decoration-none fw-bold">Students</Link>
           </Button>
           <Button variant="outlined" startIcon={<MdAttachMoney />}>
